@@ -46,7 +46,7 @@ namespace vesc_driver {
       {
         ROS_WARN_STREAM("No can interaface found in parameter server, using " << inter_name << ".");
       }
-      if(!nh.param("/can_dev_id", can_dev_id, 0x02))
+      if(!nh.param("/can_dev_id", can_dev_id, 0x36))
       {
         ROS_WARN_STREAM("No can device id found in parameter server, using " << can_dev_id << ".");
       }
